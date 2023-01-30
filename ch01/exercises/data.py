@@ -11,10 +11,10 @@ print(-15//10)
 print (15%10)
 #should be 5 (division that returns the remainder)
 print (10%15)
-#I don't know what this should be
+#should be 10
 print(10%10)
 #should be 0
 print (0%10)
 #should be 0
 print (10/15)
-#should be 0.66666666666
+#python error because it does not round at the end
