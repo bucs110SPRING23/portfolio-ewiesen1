@@ -1,0 +1,18 @@
+# built in functions
+# print(), input(),int()
+# library functions
+# 'random', 'math'
+# to use these, import them
+
+import random
+import math
+
+# always put your imports at the top of your code !!!
+
+print (math.pi)
+
+# to use objects from the module, state the module name first
+
+mylist = [1, 2, 3, 4, 5, 6, 7, 8, 9,10]
+var = random.choice(mylist)
+print(var)
