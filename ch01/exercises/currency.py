@@ -1,5 +1,6 @@
 rate = input("What is the current exchange rate for the Euro to Dollar?")
 rate = float(rate)
+#cast rate to float because input automatically return strings but we are dealing with money.
 
 amount = input("To convert from Euro to Dollar, please input your Euro amount.")
 amount = float(amount)
