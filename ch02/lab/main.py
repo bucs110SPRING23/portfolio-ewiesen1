@@ -54,8 +54,8 @@ side_length = 100
 #[10, 10, 10, 5, 5, 5]
 #side_length = int(side_length)
 color = ["pink", "yellow", "green", "purple", "orange", "black"]
-xpos = 300
-ypos = 200
+xpos = 650
+ypos = 400
 
 for s in range(len(num_side)):
     for i in range(num_side[s]):
