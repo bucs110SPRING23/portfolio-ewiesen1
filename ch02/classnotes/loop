@@ -1,0 +1,29 @@
+#For Loop: repeats a sequential algorithm on sequential data
+#for iterating_variable in sequence:
+
+#msg = "enter 3 numbers"
+#mynums = []
+
+#for i in [0,0,0]:
+#    var =int(input(":"))
+#    mynums.append(var)
+#    print(mynums)
+    #block statement - always ends in a colon and is indented
+    #must use a specific amount of spaces aka 4 (indentation) for the above 3 lines
+    #tells python when what you want repeated is finished
+#print ("all done")
+
+
+#2 ways of using a for loop
+
+#mylist = [1,2,3,4,5]
+#for i in mylist:
+#    print(i+i)
+
+
+# range()
+#'range(5)'=[0,1,2,3,4]
+#range generates list values dynamically
+#'range[0]*100' generates a list of 100 0s and stores in in memory
+#'range(100)' generates a list of 100 and stores in in memory
+#start is inclusive, stop is non-inclusive
