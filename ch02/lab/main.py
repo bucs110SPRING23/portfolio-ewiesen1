@@ -2,7 +2,7 @@ import turtle #1. import modules
 import random
 import pygame
 import math
-pygame.init()
+#pygame.init()
 
 #Part A
 window = turtle.Screen() # 2.  Create a screen
@@ -23,9 +23,10 @@ leonardo.goto(-100,-20)
 ## 5. Your PART A code goes here
 #race 1
 x = random.randrange(1,101)
+t = random.randrange(1,101)
 
 michelangelo.forward(x)
-leonardo.forward(x)
+leonardo.forward(t)
 michelangelo.up()
 leonardo.up()
 michelangelo.goto(-100,20)
@@ -45,16 +46,16 @@ window.exitonclick()
 
 # PART B - complete part B here
 
-
+pygame.init()
 window = pygame.display.set_mode()
-window.fill("lightblue")
+window.fill("blue")
 points = []
 num_side = [3,4,6,20,100,360]
-side_length = 100
+color = ["pink", "yellow", "green", "purple", "orange", "black"]
+side_length = 200
 #[10, 10, 10, 5, 5, 5]
 #side_length = int(side_length)
-color = ["pink", "yellow", "green", "purple", "orange", "black"]
-xpos = 650
+xpos = 600
 ypos = 400
 
 for s in range(len(num_side)):
@@ -62,17 +63,16 @@ for s in range(len(num_side)):
         angle = 360/num_side[s]
         radians = math.radians(angle*i)
         x = xpos + side_length*math.cos(radians)
-        y = ypos +side_length*math.sin(radians)
+        y = ypos + side_length*math.sin(radians)
         points.append([x,y])
-pygame.draw.polygon(window, color[s], points, side_length)
-pygame.display.flip()
-pygame.time.wait(1000)
-window.fill("blue")
-pygame.display.flip()
-points = []
+    pygame.draw.polygon(window, color[s], points)
+    pygame.display.flip()
+    pygame.time.wait(1000)
+    window.fill("blue")
+    pygame.display.flip()
+    points = []
 #pygame.time.wait(1000)
     
-
-
+window.exitonclick()
 
 
