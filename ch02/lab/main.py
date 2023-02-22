@@ -34,7 +34,7 @@ leonardo.goto(-100,-20)
 
 #race 2
 
-for i in range(1):
+for i in range(10):
     y = random.randrange(1,11)
     z = random.randrange(1,11)
     michelangelo.forward(y)
