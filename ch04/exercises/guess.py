@@ -1,7 +1,10 @@
 import random
 num = random.randrange(1,1001)
 
-#mynums = 2
+#while - more control over the list
+#for loop - used for a set number of interations or iterating over a collection
+
+
 for x in range (1000): 
     tally = 0
     tally = tally + 1
@@ -14,7 +17,6 @@ for x in range (1000):
     else:
         print ("Too low!")
 
-    #mynums = mynums + 1
     
 
 print (tally)
