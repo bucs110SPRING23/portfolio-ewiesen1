@@ -60,3 +60,6 @@ def main(): #main function
     start(x)
     start(x)
     dosomething()
+
+#must call your main in global scope, at the END
+main()
