@@ -1,0 +1,29 @@
+import turtle
+
+#simulate pen and paper
+pen = turtle.Turtle()
+pen2 = turtle.Turtle()
+pen2.color("orange")
+pen.speed(0)
+
+window = turtle.Screen()
+#this allows the notes to stay open until you click
+#keeps the screen from closing immediately
+#window.exitonclick() MUST BE the last turtle command !!!!!
+
+#variable = module.function()
+
+pen.forward(100)
+pen.left(7)
+pen.up(50)
+
+
+
+#interface: what can I tell this type of data to do; abstract away the details
+#state: value of all its attributes
+var = [1, 2, 3, 4, 5]
+var.append(6) #add to the end
+
+window.exitonclick()
+#algorithms/functions always have paraenthesis after them
+

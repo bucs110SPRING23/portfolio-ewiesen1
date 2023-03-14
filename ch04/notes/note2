@@ -1,0 +1,69 @@
+
+import random
+#string - lists of characters - immutable
+#lists - list of any set of any objects - mutable
+#tuples - immutable list of any set of objects
+#dictionaries - used to store key/value pairs
+
+#for loop
+
+msg = "Enter a number between 1 and 5:"
+for i in range(10000):
+    if num >5 or num < 1:
+        num = int(input(msg))
+print("done")
+
+#while loop
+#while <boolean conditon>:
+#    <code block>
+#if boolean condition is trie, exucute the code block
+#otherwise, skip it
+
+while num>5 or num<1:
+    num = int(input(msg))
+print("done")
+
+for i in range(10):
+    print(i)
+
+
+i = 0 #iterating variable
+while i < 10:
+    print(i)
+    i+= 1 #iterating variable must change
+
+mylist = [1,2,3,4,5,6,7,8,9,10]
+i = 0 #iterating variable
+while i < len(mylist):
+    print(mylist[i])
+    i+= 2 
+
+#any for loop can be recreated with a while loop
+#some while loops cannot be recreated with for loops
+
+print("Enter numbers to sum ['q' to quit]")
+sum = 0
+while sum != 'q':
+    value = input ("number: ")
+    if value.isdigit():
+        value = int(value)
+        sum += value #sum = sum + value
+    elif value == "q":
+        print ("Your total is : ", sum)
+        sum =  value
+
+
+while True:
+    value = input ("number: ")
+    if value.isdigit():
+        value = int(value)
+        sum += value #sum = sum + value
+    elif value == "q":
+        print ("Your total is : ", sum)
+        break
+
+i = 0 
+while i < 5:
+    if random.randrange(2):
+        i += 1
+    print(i)

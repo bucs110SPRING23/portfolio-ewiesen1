@@ -25,11 +25,11 @@ colors = {
 for click,hit in hitboxes.items():
     pygame.draw.rect(screen,colors[click],hit)
     font = pygame.font.Font(None, 48)
-    text = "To begin the game, please click the black box if you believe black will win,"
+    text = "To begin the game, please click the black box if you believe player 1 will win,"
     text = font.render(text, True, "blue")
     screen.blit(text, (10, y1))
    
-    text2 = "or click the white box if you believe white will win."
+    text2 = "or click the white box if you believe player 2 will win."
     text2 = font.render(text2, True, "blue")
     screen.blit(text2, (10, y1+50))
      # where <x> and<y> are coordinates on screen
@@ -88,14 +88,14 @@ for throw in range(10):
 #player1 = black
 if points1>points2:
     if bet == "black":
-        text3 = "Black wins! You guessed correctly!"
+        text3 = "Player 1 wins! You guessed correctly!"
     else:
-        text3 = "Black wins! You guessed wrong."
+        text3 = "Player 1 wins! You guessed wrong."
 elif points2>points1:
     if bet == "white":
-        text3 = "White wins! You guessed correctly!"
+        text3 = "Player 2 wins! You guessed correctly!"
     else:
-        text3 = "White wins! You guessed wrong."
+        text3 = "Player 2 wins! You guessed wrong."
 else:
     text3 = "Tie game."
 

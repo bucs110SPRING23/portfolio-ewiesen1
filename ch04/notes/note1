@@ -1,0 +1,134 @@
+#iteration
+#iterable - you can loop over it
+
+mystr = "hello"
+mynums = [1,2,3,4,5]
+#both are iterable
+
+for ch in mystr:
+    print(ch)
+
+for num in mynums:
+    print(num)
+
+#anything iterable can be "indexed" into 
+print(mystr[0],mystr[1],mystr[2],mystr[3],mystr[4])
+
+mynums[0] = 5
+print(mynums)
+
+mystr[0] ="J" #this won't work because it is immutable
+#mutable - changable
+#immutable - unchangeable once created
+
+num = 5 #immutable because you can't change the number 5 into something different, its just 5
+mystr = "hello" #immutable
+
+
+mystr = "hello"
+myotherstr = "hello"
+mynums = [1,2,3,4,5]
+myothernums = [1,2,3,4,5]
+
+if mystr == myotherstr:
+    print ("they are the same")
+
+if mystr is myotherstr:
+    print ("they are the same")
+
+if mynums == myothernums:
+    print ("they are the same")
+
+if mynums is myothernums:
+    print ("they are the same")
+
+mystr = "hello"
+print(mystr[0])
+print (mystr[1:4])
+
+mystr = "J" + mystr[1:5]
+print(mystr)
+#the J can be added even though it is immutable because you have created a new string and used it to override the old one, you are not modifiying the old string
+
+print(mystr.lower(), mystr.upper(), mystr.capitalize(), mystr)
+
+#slicing with mutable objects
+mynums = [1,2,3,4,5]
+mynums[2:2] = [2.5]
+print(mynums)
+
+mynums[2:4] = [2.5,2.6]
+print(mynums)
+
+for i in mynums:
+    i = i*2
+    print(i)
+print(mynums) #doesn't change mynums
+
+for i, v in enumerate(mynums): #i is the index location in the list and v is the value at the index location
+    mynums[i] = v*2
+print(mynums) # does change mynums
+
+#tuple - immutable list
+mynums = (5,8,1,123456789, 5) #immutable
+mynums[2] = 2.5
+
+x= 5
+y = 6
+temp = x        #this is a swap
+x = y
+y = temp
+
+(x,y) = (y,x)
+x, y = y,x # don't need the parentesis
+
+num = [5] * 3
+print (num)
+
+num = (5,) * 3 #single element tuples MUST have a trailing comma
+print(num)
+
+contacts = [
+    ["bill", "845-9823"],
+    ["jane", "745-5509"],
+]
+
+name = input ("Enter a name: ")
+#worst case scenario :
+#looping n times, where n is the number items
+for contact in contacts:
+    if contacts[0] == name:
+        print(contact[1])
+        break
+print(contact[name]) 
+#dictionary
+contact = {
+    "bill": "845-9823",
+    "jane": "745-5509",
+}
+
+print(contact["jane"])
+print(contact["joe"])
+
+#lsit[index] = value
+#dictionary[key] = value
+#key/value pairs
+#keys must be unique
+#keys must be immutable
+
+contact["joe"] = "555-1243"
+print(contact)
+
+for c in contact:
+    print(c)
+    print(contact[c])
+
+#items() - enermerate for dictionaries 
+
+
+
+
+
+
+
+

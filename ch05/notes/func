@@ -1,0 +1,33 @@
+vending machines
+black boxing 
+
+function examples
+    print()
+    input()
+
+functions encapsulate data that we don't want to keep in our heads
+
+code = input("Input a code")
+money = int(input("Give me money"))
+
+def my_vending_machine():
+
+
+Single Responsibility Principle
+- a function should do one thing
+
+A function should never be responsible for an input
+
+Arguments
+- can accress variables in global scope
+
+collision
+- two vairable of the same name
+- can't have 2 variables of the same name in the same scope
+
+def foo(): --- foo is a generic name for a function
+
+
+When you pass data through an argument, you are only passing the data, not the variable
+
+shadowing - using the same name as a global variable is called shadowing
