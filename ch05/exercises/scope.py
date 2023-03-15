@@ -1,21 +1,28 @@
-#num1 = int(input("Enter number "))
-
-def noMult(num1, num2):
+def noMult(x, y):
     product=0
-    for i in range (num2): 
-        product = product + num1 
-    print(product)     
-print(noMult(6, 7))
+    for i in range (y): 
+        product = product + x 
+    return product
 
-
-def exponent(num3, exp):
+def exponent(x, y):
     product = 1
-    for i in range (exp):
-        product = product * num3
-    print(product)
-print(exponent(4, 3))
+    for i in range (y):
+        product = product * x
+    return product
 
-def square(a):
-    exponent(a,a)
-print(square(4))
 
+def square(x):
+    return exponent(x,x)
+
+def main():
+    x = int(input("enter a number: "))
+    y = int(input("Enter another number: "))
+    result = noMult(x,y)
+    print(result)
+    result = exponent(x,y)
+    print (result)
+    result = square(x)
+    print (result)
+#only ask for input in the main
+ 
+main()
