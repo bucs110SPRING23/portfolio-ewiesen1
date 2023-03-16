@@ -15,19 +15,27 @@ def threenp1range(upper_limit):
     threenplus1_iters_dict = {}
     for n in range (2, upper_limit+1):
         threenplus1_iters_dict[n] = threenp1(n)
-        return threenplus1_iters_dict
+    return threenplus1_iters_dict, threenplus1_iters_dict.items()
+    
     
 def main():
-    #threenp1(100)
-    print(threenp1range(100))
-    print(threenp1(100))
+    upper_limit = int(input("Enter an upper limit:"))
+    n = int(input("Enter a start number:"))
+    print(threenp1range(upper_limit))
+    print(threenp1(n))
+
+def graph_coordinates(theenplus1_iters_dict):
+    screen = pygame.display.set_mode()
+    screen.fill("mistyrose")
+    screen_size = screen.get_size()
+    dimensions = [screen_size[0], screen_size[1]]
+    #coor = threenp1range()
+    #threenp1range()
+    #threenplus1_iters_dict[n] = threenp1(n)
+    pygame.draw.lines(screen, "black", True,)
 
 main()
 
-screen = pygame.display.set_mode()
-screen_size = screen.get_size()
-dimensions = [screen_size[0], screen_size[1]]
-screen.fill("mistyrose")
 
-def graph_coordinates(theenplus1_iters_dict):
-    
+
+
