@@ -26,6 +26,10 @@ def draw(color,shirt,width):
     turtle1.shape("circle")
     angle = 90
     measures = [sleeve,sleevewidth, sleeve+width,sleevewidth,sleeve]
+    turtle1.fillcolor(color)
+
+    turtle1.begin_fill()
+    turtle1.down()
 
     turtle1.forward(width/2)
     turtle1.left(angle)
@@ -41,10 +45,12 @@ def draw(color,shirt,width):
     turtle1.left(angle)
     turtle1.forward(width/2)
 
+    turtle1.end_fill()
+
     screen.exitonclick()
 
 def main():
-    color = input("Enter a color for your shirt:")
+    color = str(input("Enter a color for your shirt:"))
     shirt = int(input("Enter length for your shirt:"))
     width = int(input("Enter a width for you shirt:"))
     print(dist(shirt,width))
