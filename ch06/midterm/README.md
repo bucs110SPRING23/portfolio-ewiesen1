@@ -1,7 +1,7 @@
 # CS110 Midterm Exam
 
 ## SHORT DESCRIPTION 
-My program used tutle to draw a simply outline of a t-shirt.
+My program used turtle to draw a simply outline of a t-shirt.
 
 ## KNOWN BUGS AND INCOMPLETE PARTS 
 No known bugs.
