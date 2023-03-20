@@ -1,11 +1,21 @@
 import turtle
 
 def dist(shirt, width):
+    """
+    This function sets how long the shirt will be and how wide it will be.
+    args: shirt, width 
+    return: int
+    """
     shirt = shirt
     width = width
     return shirt, width
 
 def draw(color,shirt,width):
+    """
+    This function draws a shirt with turtle.
+    args: color, shirt, width
+    return: None
+    """
     dist(shirt,width)
     sleeve = shirt/4
     sleevewidth = width/4
