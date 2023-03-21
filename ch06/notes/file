@@ -28,6 +28,11 @@ import json # json is a string format, not a file format
 
 #   file_pointer.close() #Must remeber to close the file!!!!!!
 
+#"w" - writing deletes and existing file, truncate the file
+
+#modes: "r", "w", "a"
+
+
 
 #main() 
 
