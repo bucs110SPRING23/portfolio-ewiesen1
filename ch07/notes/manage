@@ -16,3 +16,4 @@ Creating a point object:
 object can do one thing
 state of the object: x, y, color
 behavior: change_color, move
+
