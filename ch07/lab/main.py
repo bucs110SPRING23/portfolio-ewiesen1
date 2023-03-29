@@ -3,9 +3,9 @@ from Surface import Surface
 
 def main():
     """
-    general function description
-    args: (type) description
-    return: (type) description
+    Testing/verifying my code
+    args: None
+    return: None
     """
 
     r = Rectangle(10, 10, 10, 10)
