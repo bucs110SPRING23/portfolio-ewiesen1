@@ -6,6 +6,11 @@ class StringUtility:
         return self.string
 
     def vowels(self):
+        """
+        counts the number of vowels in the string
+        args: self
+        return: str(vowels)
+        """
         vowels = 0
         for v in self.string:
             if v in "aeiou":
@@ -15,6 +20,11 @@ class StringUtility:
         return str(vowels)
     
     def bothEnds(self): 
+        """
+        returns a string made of the first 2 and last 2 characters of the string
+        args: self
+        return: str
+        """
         if len(self.string) > 2:
             return f"{self.string[0]}{self.string[1]}{self.string[-2]}{self.string[-1]}"
 
@@ -22,6 +32,11 @@ class StringUtility:
             return ""
     
     def fixStart(self):
+        """
+        returns a string where all accurences of the first character have been changed to *, except the first character itself
+        args: self
+        return: str(replaced)
+        """
         replaced = ""
         for star in self.string:
             if star == self.string[0] and replaced != "":
@@ -31,12 +46,22 @@ class StringUtility:
         return replaced
 
     def asciiSum(self):
+        """
+        sums the ascii values in the string
+        args: self
+        return: int(sum)
+        """
         sum = 0
         for ch in self.string:
             sum += (ord(ch)) #converts char into int
         return sum
     
     def cipher(self):
+        """
+        returns an endoded string by incrementing all letters by the length of the string
+        args: self
+        return: str(result)
+        """
         result = ""
         for char in self.string:
             shift = len(self.string)
