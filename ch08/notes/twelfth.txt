@@ -1,0 +1,25 @@
+class == types
+use "class" for user-defined types
+"complex-type"
+
+class data: instance variables 
+    example:
+
+        class Num:
+            def __init__(self,n):
+                self.data = n
+                self.x = "string"
+
+        def main():
+            mynum = Num(7)
+            mynum2 = Num(7)
+
+            print(mynum.data)
+            print(mynum2.data)
+            
+            t = turtle.Turtle()
+            t.forward(56)
+
+            
+
+        main()
