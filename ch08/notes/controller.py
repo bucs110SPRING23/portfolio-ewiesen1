@@ -1,7 +1,7 @@
 import pygame
 
 ## import models ##
-from src.snowman import Snowman
+from snowman import Snowman
 
 LIGHT_BG = (200, 200, 250)
 MAX_SNOWMEN = 20
@@ -27,7 +27,7 @@ class Controller:
             new_sm = Snowman(xpos, self.height/2)
             self.snowpeoples.add(new_sm)
             xpos += interval
-            
+
 
 
     def mainloop(self):
