@@ -1,0 +1,73 @@
+# events
+# operating system handles events
+# Your program --> OS: is anything happening?
+# OS => event
+# type of event == operation
+# two things users can do
+#    click the mouse
+#    press the key
+
+# we want to connect actions to algorithms
+
+# game of simon says
+
+import pygame
+import random
+pygame.init()
+screen = pygame.display.set_mode()
+colors = ["red", "green", "blue", "yellow"]
+random.shuffle(colors)
+
+for color in colors:
+    screen.fill(color)
+    pygame.display.flip()
+    pygame.time.wait(1000)
+
+    screen.fill("black")
+    pygame.display.flip()
+    pygame.time.wait(250)
+
+message = """
+    Simon says
+    UP: RED
+    DOWN: BLUE
+    LEFT: GREEN
+    RIGHT: YELLOW
+
+    click on the window, enter sequence, then press enter
+"""
+response = input(message)
+
+#filter through events so we only deal with events that we care about
+#which is: pygame.EVENT_OBJECT
+
+user_sequence = []
+
+#respond to events in one place in program
+for event in pygame.event.get():
+    #print(event) --> this would print every single event done, including mouse movement
+    if event.type == pygame.KEYDOWN:
+        if event.key == pygame.K_UP:
+            #print("UP")
+            screen.fill("red")
+            user_sequence.append("red")
+        if event.key == pygame.K_DOWN:
+            #print("DOWN")
+            screen.fill("blue")
+            user_sequence.append("blue")
+        if event.key == pygame.K_LEFT:
+            #print("LEFT")
+            screen.fill("green")
+            user_sequence.append("green")
+        if event.key == pygame.K_RIGHT:
+            #print("RIGHT")
+            screen.fill("yellow")
+            user_sequence.append("yellow")
+print ("user sequence:", user_sequence)
+print ("colors:", colors)
+print ("user events: ", pygame.event.get())
+
+if user_sequence == colors:
+    print ("You win!")
+else: 
+    print ("Were you paying attention?")

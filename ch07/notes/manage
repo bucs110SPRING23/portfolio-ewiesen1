@@ -1,0 +1,19 @@
+managing complexity
+Unix - 10000 SLOC (source lines of code)
+chrome - 10,000,000 SLOC
+OS X - 100,000,000 SLOC
+
+complex objects
+    prinmitives: int, str, float, lists, dict, tuple
+    turtle: x, y, heading, color(color), pensize(int), shape(str)
+
+bundle data and functions together
+state: the current values of the data in the object
+behavior: the functions that operate on the data in the object
+
+Creating a point object:
+
+object can do one thing
+state of the object: x, y, color
+behavior: change_color, move
+

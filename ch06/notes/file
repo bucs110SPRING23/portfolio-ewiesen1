@@ -1,0 +1,41 @@
+import json # json is a string format, not a file format
+
+#files = saved program state
+
+#operating system - manage files
+#request the file from operating system
+#    where, name, how to use it
+
+#def main():
+#    file_pointer = open("assets/ideas.txt", "r") #"r" means open in read mode
+#    ideas = file_ponter.read()
+#    print (ideas) 
+#    ideas = files_pointer.readlines()
+#    print(ideas) 
+#    ideas = file_pointer.readline()
+#    print (ideas)
+#    ideas = file_pointer.readline()
+#    print (ideas)
+# 
+#   idea = input ("Enter some data")
+#   ideas = []
+#   ideas.append(idea)
+
+
+#    for i in ideas:
+#       file_pointer.write(i + "\n") #line break
+
+
+#   file_pointer.close() #Must remeber to close the file!!!!!!
+
+#"w" - writing deletes and existing file, truncate the file
+
+#modes: "r", "w", "a"
+
+
+
+#main() 
+
+
+
+

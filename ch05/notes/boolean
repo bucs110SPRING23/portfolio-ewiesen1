@@ -1,0 +1,62 @@
+#def foo(param1, param2):
+#    return param1+param2
+
+#def bar(param1=4,param2=3):
+#    if True:
+#        return param1+param2
+#    else:
+#        pass
+
+#foo(1,2)
+
+#bar(1)
+#bar()
+#bar(1,2,3)
+
+#result = bar(param2=1, param1=2)
+#print(result)
+
+def func():
+    pass #placeholder during code construction so you don't have errors
+
+def percentage_to_letter(percent=99):
+    """ 
+    This is a function that returns a letter grade based on a percentage 
+    args: percent (int)
+    return: letter (str)
+    """
+    #the above is a doc string, always put it in all your functions
+    let = "A"
+    if 80 <= percent < 90:
+        let = "B"
+    elif 70 <= percent < 80:
+        let = "C"
+    elif 60 <= percent < 70:
+        let = "D"
+    elif percent < 60:
+        let = "F"
+    return let
+
+def is_passing(letter): #boolean funcion, is_ * convention
+    """
+    This is a function that returns a letter grade based on a percentage 
+    args: percent (int)
+    return: letter (str)
+    """
+    return letter.lower() in "abc" #because of in, this function already returns True or False, so we don't need to explicitly return True or False
+        #return True
+    #return False
+
+def main(): #driver code; dont need a doc string in your main
+    grades = [90,80,70,60,50]
+    for grade in grades:
+        letter = percentage_to_letter(grade)
+        if is_passing(letter):
+            print("You passed!")
+        else:
+            print("Someone messed up your grade.")
+
+
+if __name__ == "__main__":
+    main()
+

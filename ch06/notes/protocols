@@ -1,0 +1,19 @@
+protocols
+    http - used for complicated stuff
+    xml
+    json - current standard used for saving structured data 
+         - javascript object notation
+         - string formats, NOT file formats
+         - limitations: can only have int, float, str, bool, list, dictionary, None
+         - {}:dictionary, []:list
+
+import json
+
+syntax:
+
+{
+    "title": "The Matrix",
+    "year": 1999,
+    "rating": "R"
+    "sequels": "
+}
